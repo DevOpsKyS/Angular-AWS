@@ -9,9 +9,16 @@ import { HttpClient } from '@angular/common/http';
 export class AppComponent {
   title = 'Angular 9 - Funciones Lambda';
 
-private SERVER_URL = "https://bn86do16pc.execute-api.us-east-2.amazonaws.com/default/pythonKYS";
 constructor(private httpClient: HttpClient) { }
 
-lambda = this.httpClient.get('${this.SERVER_URL}');
+lambda = this.httpClient.get('https://bn86do16pc.execute-api.us-east-2.amazonaws.com/default/pythonKYS')
+.subscribe (
+  response => {
+    console.log(response);
+  },
+  error => {
+    console.log(error);
+  }
+);
 
 }
