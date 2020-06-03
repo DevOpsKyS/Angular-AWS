@@ -1,0 +1,10 @@
+{
+	"auth": {
+		"angularaws64da87d0": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"customAuth": false
+		}
+	}
+}
