@@ -18884,8 +18884,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
      * APPLICATION IMPORTS
      */
 
-    /***/
 
+    window.global = window;
+    window.process = {
+      env: {
+        DEBUG: undefined
+      }
+    };
+    /***/
   },
 
   /***/
